@@ -1,16 +1,11 @@
-<td-layout-nav layout-fill>
-  <div td-toolbar-content>
-    <button md-button routerLink="home" routerLinkActive="router-link-active">GITHUB APP</button>
-    <span flex></span>
-    <button md-button routerLink="repo/PetrusStarken" routerLinkActive="router-link-active">MY REPOSITORIES</button>
-    <button md-button routerLink="search" routerLinkActive="router-link-active">SEARCH</button>
-  </div>
+<div layout="column" layout-fill>
+  <app-navbar></app-navbar>
 
-    <div layout-padding flex>
+  <main class="md-padding" layout="row" layout-align="center" flex>
+    <div layout="column" flex-xs="100" flex-sm="90" flex-md="80" flex="70">
       <router-outlet></router-outlet>
     </div>
+  </main>
 
-  <td-layout-footer color="accent">
-    © 2016 Pedro Camara Junior
-  </td-layout-footer>
-</td-layout-nav>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,21 @@
+<header>
+  <md-toolbar color="primary">
+
+    <button md-button routerLink="/">GITHUB APP</button>
+
+    <span class="fill-remaining-space"></span>
+    <div fxLayout="row" hide-xs>
+      <button md-button routerLink="repo/PetrusStarken" routerLinkActive="router-link-active">MY REPOSITORIES</button>
+      <button md-button routerLink="search" routerLinkActive="router-link-active">SEARCH</button>
+    </div>
+
+    <button md-button [md-menu-trigger-for]="menu" show-xs hide>
+      <md-icon>menu</md-icon>
+    </button>
+
+  </md-toolbar>
+  <md-menu x-position="before" #menu="mdMenu">
+    <button md-menu-item routerLink="repo/PetrusStarken">MY REPOSITORIES</button>
+    <button md-menu-item routerLink="search">SEARCH</button>
+  </md-menu>
+</header>
