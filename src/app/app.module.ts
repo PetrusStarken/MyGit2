@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { CovalentCoreModule } from '@covalent/core';
+//import { CovalentDataTableModule } from '@covalent/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
