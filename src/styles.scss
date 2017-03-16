@@ -2,16 +2,20 @@
 
 [color="primary"] {
   background-color:  mat-color($primary);
+  color: mat-color($primary, default-contrast);
 }
 
 [color="secondary"] {
   background-color:  mat-color($secondary);
+  color: mat-color($secondary, default-contrast);
 }
 
 [color="accent"] {
   background-color:  mat-color($accent);
+  color: mat-color($accent, default-contrast);
 }
 
 [color="warn"] {
   background-color: mat-color($warn);
+  color: mat-color($warn, default-contrast);
 }
