@@ -1,2 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('~@covalent/core/theming/prebuilt/blue-orange.css');
+@import "./theme";
+
+[color="primary"] {
+  background-color:  mat-color($primary);
+}
+
+[color="secondary"] {
+  background-color:  mat-color($secondary);
+}
+
+[color="accent"] {
+  background-color:  mat-color($accent);
+}
+
+[color="warn"] {
+  background-color: mat-color($warn);
+}
